@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @media (min-width: 992px) {
+            .navbar-expand-lg .navbar-collapse {
+                display: -ms-flexbox !important;
+                display: flex !important;
+                -ms-flex-preferred-size: auto;
+                flex-basis: auto;
+                margin-left: 600px;
+                padding: 10px;
+
+
+            }
+
+            .fa {
+                padding: 20px;
+                font-size: 30px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+            }
+
+            #footer {
+                background-color: red;
+                position: absolute;
+                left: 0%;
+                top: 128%;
+                width: 100%;
+                height: 202px;
+                background-color: black;
+            }
+
+            #footer h2 {
+                color: white;
+                font-family: 'Bebas Neue', cursive;
+                position: absolute;
+                left: 3%;
+            }
+
+            #footer p {
+
+                font-size: 1.5em;
+                padding-top: 5%;
+                position: absolute;
+                left: 5%;
+                right: 4%;
+                color: white;
+            }
+
+            #follow {
+                color: black;
+                position: absolute;
+                font-family: fantasy;
+                top: 495%;
+                left: 27%;
+                right: 27%;
+                font-size: 4em;
+                white-space: nowrap;
+            }
+
+            #circle1 {
+
+                color: red;
+                display: inline-block;
+                position: absolute;
+                top: 510%;
+                left: 84%;
+            }
+
+            #circle2 {
+
+                color: red;
+                display: inline-block;
+                position: absolute;
+                top: 510%;
+
+                left: 68%;
+            }
+
+            #circle3 {
+
+                color: red;
+                display: inline-block;
+                position: absolute;
+                top: 510%;
+
+                left: 53%;
+            }
+
+            #circle4 {
+
+                color: red;
+                display: inline-block;
+                position: absolute;
+                top: 510%;
+
+                left: 37%;
+
+            }
+
+            #circle5 {
+                color: red;
+                display: inline-block;
+                color: red;
+                display: inline-block;
+                position: absolute;
+                top: 510%;
+
+                left: 17%;
+            }
+
+            #circle6 {
+                color: red;
+                display: inline-block;
+                color: red;
+                display: inline-block;
+                position: absolute;
+                top: 510%;
+
+            }
+
+            .subtitle {
+                color: white;
+                position: relative;
+                left: 84%;
+                right: 84%
+            }
+
+            .title2 {
+
+                white-space: nowrap;
+                position: absolute;
+                left: 12%;
+                color: whitesmoke;
+                /* font-size: 3em; */
+                font-family: cursive;
+            }
+
+            .treatpara {
+                color: white;
+                position: absolute;
+                top: -57%;
+                padding: 14%;
+                font-size: 2em;
+                font-family: monospace;
+            }
+
+            #treat {
+                background-color: green;
+                position: absolute;
+                top: 387%;
+                background-image: url('https://image.freepik.com/free-vector/virus-cure-concept-illustration_23-2148498938.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+            }
+
+            .top-nav-collapse {
+                background-color: #78909c !important;
+            }
+
+            .navbar:not(.top-nav-collapse) {
+                background-color: rgba(141, 136, 139);
+            }
+
+
+            .external {
+                border: 2px solid white;
+                position: absolute;
+                top: 400%;
+                left: 50%;
+                padding: 5%;
+                background-color: rgba(245, 22, 167, 0.4);
+                right: 6%;
+                border-radius: 130px;
+            }
+
+            #treat2 {
+                color: white;
+            }
+
+            .card1 {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: .25rem;
+                position: absolute;
+                top: 185%;
+                left: 13%;
+                /* border: red; */
+                border: 5px solid black;
+                border-radius: 79px;
+                padding: 3%;
+            }
+
+            .card2 {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: .25rem;
+                position: absolute;
+                top: 185%;
+                left: 41%;
+                /* border: red; */
+                border: 5px solid black;
+                border-radius: 79px;
+                padding: 2%;
+            }
+
+            .card-img-top {
+                width: 100%;
+                padding: 7%;
+                border-top-left-radius: calc(.25rem - 1px);
+                border-top-right-radius: calc(.25rem - 1px);
+            }
+
+            .card3 {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: .25rem;
+                position: absolute;
+                top: 185%;
+                left: 69%;
+                /* border: red; */
+                border: 5px solid black;
+                border-radius: 79px;
+                padding: 2%;
+            }
+
+            .pcard1 {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: .25rem;
+                position: absolute;
+                top: 300%;
+                left: 7%;
+                /* border: red; */
+                border: 5px solid black;
+                border-radius: 79px;
+                padding: 1%;
+            }
+
+            .pcard2 {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: .25rem;
+                position: absolute;
+                top: 300%;
+                left: 30%;
+                /* border: red; */
+                border: 5px solid black;
+                border-radius: 79px;
+                padding: 2%;
+            }
+
+            .pcard3 {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: .25rem;
+                position: absolute;
+                top: 300%;
+                left: 53%;
+                /* border: red; */
+                border: 5px solid black;
+                border-radius: 79px;
+                padding: 2.5%;
+            }
+
+            .pcard4 {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: .25rem;
+                position: absolute;
+                top: 300%;
+                left: 75%;
+                /* border: red; */
+                border: 5px solid black;
+                border-radius: 79px;
+                padding: 0%;
+            }
+
+
+            .symp {
+                color: black;
+                position: absolute;
+                top: 165%;
+                white-space: nowrap;
+                left: 23%;
+                font-size: 2em;
+                /* line-height: 24px; */
+                font-family: 'Bebas Neue', cursive;
+            }
+
+            .prev {
+                color: black;
+                position: absolute;
+                top: 275%;
+                white-space: nowrap;
+                left: 30%;
+                font-size: 2em;
+                /* line-height: 24px; */
+                font-family: 'Bebas Neue', cursive;
+            }
+
+
+
+            .countryName {
+                border: 2px solid #665c5c;
+                border-radius: 10px;
+                position: absolute;
+                /* display: block; */
+                top: 110%;
+                left: 17%;
+                right: 17%;
+                width: 70%;
+                color: white;
+                background-image: linear-gradient(45deg, black, gray);
+                font-size: 2em;
+                font-family: 'Bebas Neue', cursive;
+
+
+            }
+
+            .box {
+                border: solid 2px red;
+            }
+
+            #title {
+                color: blanchedalmond;
+                position: absolute;
+                top: 74%;
+                left: 28%;
+                right: 28%;
+                letter-spacing: 8px;
+                margin-bottom: 20px;
+                font-size: 2.6em;
+            }
+
+            a:not([href]):not([tabindex]) {
+                color: wheat;
+                text-decoration: none;
+            }
+
+            a:not([href]):not([tabindex]):hover {
+                color: black;
+
+            }
+
+            #myBtn {
+                position: absolute;
+                display: flex;
+                justify-content: space-evenly;
+                margin-right: 89px;
+                left: 25%;
+                right: 25%;
+                top: 88%;
+            }
+
+            .btn-primary:hover {
+                background-image: linear-gradient(to right, white, grey);
+                border-radius: 20px;
+                border: none;
+                color: black;
+            }
+
+            h1 {
+                letter-spacing: 8px;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 3em;
+                position: absolute;
+                left: 20%;
+                right: 20%;
+            }
+
+            h5 {
+                letter-spacing: 3px;
+            }
+
+            .hr-light {
+                border-top: 3px solid #fff;
+                width: 80px;
+            }
+
+            .navbar-dark .navbar-brand {
+                font-size: 3em;
+                font-family: 'Bebas Neue', cursive;
+            }
+
+            .navbar-dark .navbar-brand:hover {
+                color: black;
+
+            }
+
+            #stats {
+                color: wheat;
+                text-decoration: none;
+                font-size: 2em;
+                padding: 2%;
+
+            }
+
+            #para {
+                border: gray solid 3px;
+                color: white;
+                position: absolute;
+                background-color: black;
+                /* padding: 11%; */
+                padding-top: 2%;
+                padding-right: 2%;
+                padding-bottom: 2%;
+                padding-left: 2%;
+                top: 106%;
+                left: 0%;
+                right: 0%;
+                font-size: 1.5em;
+                background-position-y: center;
+            }
+
+            #virus {
+
+                position: absolute;
+                left: 80%;
+                /* size: 21px; */
+                width: 246px;
+                top: 7%;
+            }
+
+
+
+            .protect {}
+
+            #stats:hover {
+                color: black;
+            }
+
+            .navbar-dark .navbar-nav .active>.nav-link {
+                color: white;
+            }
+
+            .navbar-dark .navbar-nav .nav-link {
+                color: rgba(255, 255, 255, .5);
+                margin-left: 20px;
+            }
+
+            .navbar-dark .navbar-nav .nav-link:hover {
+                background-color: white;
+                color: black;
+                border-radius: 10px;
+                font-size: 1em;
+            }
+
+            #map1 {
+                position: absolute;
+                top: 24%;
+                left: 23%;
+                right: 76%;
+            }
+
+            #map2 {
+                position: absolute;
+                top: 54%;
+                left: 23%;
+                right: 76%;
+            }
+
+            #img1 {
+                vertical-align: middle;
+                border-style: none;
+                position: absolute;
+                left: 18%;
+                right: 18%;
+                top: 39%;
+                border-radius: 158px;
+                height: 554px;
+                width: 990px;
+                border: white solid 2px;
+            }
+
+            #img1:hover {
+                opacity: 0.9;
+                border-radius: 0px;
+                border: white solid 3px;
+
+            }
+
+
+            h2 {
+                white-space: nowrap;
+                color: white;
+            }
+
+            body {
+                background-color: #252324;
+            }
+
+            .btn-primary {
+                color: black;
+                background-color: transparent;
+                border: solid 2px white;
+                font-size: 1em;
+                margin: -29px;
+                padding-top: 1%;
+                padding-bottom: 1%;
+                line-height: 18px;
+                padding-right: 1%;
+                padding-left: 1%;
+                border-radius: 27px;
+            }
+        }
+    </style>
+    <title>Maps</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="./corona.html"><strong>COVID-19 INFO</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+                aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./corona.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News sources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Corona Virus
+
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div id="map1">
+        <h2>
+            TRACKCORONA-LIVE WORLD MAP
+        </h2>
+
+
+    </div>
+    <a href="https://www.bing.com/covid/local/india" target="_blank"><img id="img1"
+            src="https://cnet4.cbsistatic.com/img/j-KiAPtv6R_fyA_0715-Kg8YnmU=/940x0/2020/04/03/07c8bb49-4ec5-480b-a977-1614f2484881/john-hopkins-map-april-3-2020.png">
+    </a>
+
+    <footer id="footer">
+        <h2>COVID-19 INFO</h2>
+        <p>This website is for health information and advice about coronavirus (COVID-19), how to prevent and protect
+            yourself from disease.<br>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a></p>
+
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

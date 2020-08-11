@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html,
+        body,
+        header,
+        .view {
+            height: 100%;
+        }
+
+        @media (min-width: 300px) {
+
+            a:not([href]):not([tabindex]) {
+                color: antiquewhite;
+                text-decoration: none;
+            }
+
+            a:not([href]):not([tabindex]):hover {
+                color: black;
+
+            }
+
+            .btn-primary:hover {
+                background-image: linear-gradient(to right, white, grey);
+                border-radius: 20px;
+                border: none;
+                color: black;
+            }
+
+            .text {
+                margin: 10px;
+                left: 26%;
+                right: 26%;
+                top: 70%;
+                color: white;
+            }
+
+            html,
+            body,
+            header,
+            .view {
+                height: 100vh;
+            }
+
+            #myBtn {
+                position: absolute;
+                display: flex;
+                justify-content: space-evenly;
+                margin-right: 0;
+                left: 30%;
+                right: 30%;
+                top: 83%;
+            }
+
+
+            .btn-primary {
+                color: #fff;
+                background-color: transparent;
+                border: solid 2px white;
+                font-size: 1em;
+                margin: 20px;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                line-height: 18px;
+                padding-right: 20%;
+                padding-left: 20%;
+                border-radius: 27px;
+            }
+
+            h1 {
+                font-size: 197%;
+                color: antiquewhite;
+                position: absolute;
+                top: 76%;
+                left: 4%;
+                right: 1%;
+            }
+
+            .top-nav-collapse {
+                background-color: #78909c !important;
+            }
+
+            .navbar:not(.top-nav-collapse) {
+                background-color: rgba(141, 136, 139);
+            }
+
+        }
+
+        @media (min-width: 768px) {
+            a:not([href]):not([tabindex]) {
+                color: blanchedalmond;
+                text-decoration: none;
+                font-size: 2em;
+                line-height: 1em;
+            }
+
+            .col-md-12 {
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+                /* margin-top: 450px; */
+            }
+
+
+            #myBtn {
+                position: absolute;
+                display: flex;
+                justify-content: space-evenly;
+                margin-right: 0;
+                left: 30%;
+                right: 30%;
+                top: 83%;
+
+            }
+
+            #title {
+                position: absolute;
+                left: 5%;
+                right: 5%;
+                font-size: 5.em;
+                font-size: 4em;
+            }
+        }
+
+
+        @media (min-width: 992px) {
+            .navbar-expand-lg .navbar-collapse {
+                display: -ms-flexbox !important;
+                display: flex !important;
+                -ms-flex-preferred-size: auto;
+                flex-basis: auto;
+                margin-left: 600px;
+                padding: 10px;
+
+
+            }
+
+            .fa {
+                padding: 20px;
+                font-size: 30px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+            }
+
+            #footer {
+                background-color: red;
+                position: absolute;
+                left: 0%;
+                top: 552%;
+                width: 100%;
+                height: 202px;
+                background-color: black;
+            }
+
+            #footer h2 {
+                color: white;
+                font-family: 'Bebas Neue', cursive;
+                position: absolute;
+                left: 3%;
+            }
+
+            #follow {
+                color: black;
+                position: absolute;
+                font-family: fantasy;
+                top: 495%;
+                left: 27%;
+                right: 27%;
+                font-size: 4em;
+                white-space: nowrap;
+            }
+
+            #footer p {
+
+                font-size: 1.5em;
+                padding-top: 5%;
+                position: absolute;
+                left: 5%;
+                right: 4%;
+                color: white;
+            }
+
+            #circle1 {
+
+                color: red;
+                display: inline-block;
+                position: absolute;
+                top: 510%;
+                left: 84%;
+            }
+
+            #circle2 {
+
+                color: red;
+                display: inline-block;
+                position: absolute;
+                top: 510%;
+
+                left: 68%;
+            }
+
+            #circle3 {
+
+                color: red;
+                display: inline-block;
+                position: absolute;
+                top: 510%;
+
+                left: 53%;
+            }
+
+            #circle4 {
+
+                color: red;
+                display: inline-block;
+                position: absolute;
+                top: 510%;
+
+                left: 37%;
+
+            }
+
+            #circle5 {
+                color: red;
+                display: inline-block;
+                color: red;
+                display: inline-block;
+                position: absolute;
+                top: 510%;
+
+                left: 17%;
+            }
+
+            #circle6 {
+                color: red;
+                display: inline-block;
+                color: red;
+                display: inline-block;
+                position: absolute;
+                top: 510%;
+
+            }
+
+            .subtitle {
+                color: white;
+                position: relative;
+                left: 84%;
+                right: 84%
+            }
+
+            .title2 {
+
+                white-space: nowrap;
+                position: absolute;
+                left: 12%;
+                color: whitesmoke;
+                /* font-size: 3em; */
+                font-family: cursive;
+            }
+
+            .treatpara {
+                color: white;
+                position: absolute;
+                top: -57%;
+                padding: 14%;
+                font-size: 2em;
+                font-family: monospace;
+            }
+
+            #treat {
+                background-color: green;
+                position: absolute;
+                top: 387%;
+                background-image: url('https://image.freepik.com/free-vector/virus-cure-concept-illustration_23-2148498938.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+            }
+
+            .external {
+                border: 2px solid white;
+                position: absolute;
+                top: 400%;
+                left: 50%;
+                padding: 5%;
+                background-color: rgba(245, 22, 167, 0.4);
+                right: 6%;
+                border-radius: 130px;
+            }
+
+            #treat2 {
+                color: white;
+            }
+
+            .card1 {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: .25rem;
+                position: absolute;
+                top: 185%;
+                left: 13%;
+                /* border: red; */
+                border: 5px solid black;
+                border-radius: 79px;
+                padding: 3%;
+            }
+
+            .card2 {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: .25rem;
+                position: absolute;
+                top: 185%;
+                left: 41%;
+                /* border: red; */
+                border: 5px solid black;
+                border-radius: 79px;
+                padding: 2%;
+            }
+
+            .card-img-top {
+                width: 100%;
+                padding: 7%;
+                border-top-left-radius: calc(.25rem - 1px);
+                border-top-right-radius: calc(.25rem - 1px);
+            }
+
+            .card3 {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: .25rem;
+                position: absolute;
+                top: 185%;
+                left: 69%;
+                /* border: red; */
+                border: 5px solid black;
+                border-radius: 79px;
+                padding: 2%;
+            }
+
+            .pcard1 {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: .25rem;
+                position: absolute;
+                top: 300%;
+                left: 7%;
+                /* border: red; */
+                border: 5px solid black;
+                border-radius: 79px;
+                padding: 1%;
+            }
+
+            .pcard2 {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: .25rem;
+                position: absolute;
+                top: 300%;
+                left: 30%;
+                /* border: red; */
+                border: 5px solid black;
+                border-radius: 79px;
+                padding: 2%;
+            }
+
+            .pcard3 {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: .25rem;
+                position: absolute;
+                top: 300%;
+                left: 53%;
+                /* border: red; */
+                border: 5px solid black;
+                border-radius: 79px;
+                padding: 2.5%;
+            }
+
+            .pcard4 {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: .25rem;
+                position: absolute;
+                top: 300%;
+                left: 75%;
+                /* border: red; */
+                border: 5px solid black;
+                border-radius: 79px;
+                padding: 0%;
+            }
+
+
+            .symp {
+                color: black;
+                position: absolute;
+                top: 165%;
+                white-space: nowrap;
+                left: 23%;
+                font-size: 2em;
+                /* line-height: 24px; */
+                font-family: 'Bebas Neue', cursive;
+            }
+
+            .prev {
+                color: black;
+                position: absolute;
+                top: 275%;
+                white-space: nowrap;
+                left: 30%;
+                font-size: 2em;
+                /* line-height: 24px; */
+                font-family: 'Bebas Neue', cursive;
+            }
+
+
+
+            .countryName {
+                border: 2px solid #665c5c;
+                border-radius: 10px;
+                position: absolute;
+                /* display: block; */
+                top: 110%;
+                left: 17%;
+                right: 17%;
+                width: 70%;
+                color: white;
+                background-image: linear-gradient(45deg, black, gray);
+                font-size: 2em;
+                font-family: 'Bebas Neue', cursive;
+
+
+            }
+
+            .box {
+                border: solid 2px red;
+            }
+
+            #title {
+                color: blanchedalmond;
+                position: absolute;
+                top: 74%;
+                left: 28%;
+                right: 28%;
+                letter-spacing: 8px;
+                margin-bottom: 20px;
+                font-size: 2.6em;
+            }
+
+            a:not([href]):not([tabindex]) {
+                color: wheat;
+                text-decoration: none;
+            }
+
+            a:not([href]):not([tabindex]):hover {
+                color: black;
+
+            }
+
+            #myBtn {
+                position: absolute;
+                display: flex;
+                justify-content: space-evenly;
+                margin-right: 89px;
+                left: 25%;
+                right: 25%;
+                top: 88%;
+            }
+
+            .btn-primary:hover {
+                background-image: linear-gradient(to right, white, grey);
+                border-radius: 20px;
+                border: none;
+                color: black;
+            }
+
+            h1 {
+                letter-spacing: 8px;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 3em;
+                position: absolute;
+                left: 20%;
+                right: 20%;
+            }
+
+            h5 {
+                letter-spacing: 3px;
+            }
+
+            .hr-light {
+                border-top: 3px solid #fff;
+                width: 80px;
+            }
+
+            .navbar-dark .navbar-brand {
+                font-size: 3em;
+                font-family: 'Bebas Neue', cursive;
+            }
+
+            .navbar-dark .navbar-brand:hover {
+                color: black;
+
+            }
+
+            #stats {
+                color: wheat;
+                text-decoration: none;
+                font-size: 2em;
+                padding: 2%;
+
+            }
+
+            #para {
+                border: gray solid 3px;
+                color: white;
+                position: absolute;
+                background-color: black;
+                /* padding: 11%; */
+                padding-top: 2%;
+                padding-right: 2%;
+                padding-bottom: 2%;
+                padding-left: 2%;
+                top: 106%;
+                left: 0%;
+                right: 0%;
+                font-size: 1.5em;
+                background-position-y: center;
+            }
+
+            #virus {
+
+                position: absolute;
+                left: 80%;
+                /* size: 21px; */
+                width: 246px;
+                top: 7%;
+            }
+
+
+
+            .protect {}
+
+            #stats:hover {
+                color: black;
+            }
+
+            .navbar-dark .navbar-nav .active>.nav-link {
+                color: white;
+            }
+
+            .navbar-dark .navbar-nav .nav-link {
+                color: rgba(255, 255, 255, .5);
+                margin-left: 20px;
+            }
+
+            .navbar-dark .navbar-nav .nav-link:hover {
+                background-color: white;
+                color: black;
+                border-radius: 10px;
+                font-size: 1em;
+            }
+
+            .btn-primary {
+                color: navajowhite;
+                background-color: transparent;
+                border: solid 2px white;
+                font-size: 2em;
+                margin: -29px;
+                padding-top: 2%;
+                padding-bottom: 1%;
+                line-height: 18px;
+                padding-right: 1%;
+                padding-left: 1%;
+                border-radius: 27px;
+
+            }
+        }
+    </style>
+
+    <title>COVID-19 Information</title>
+</head>
+
+<body>
+
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="./corona.html"><strong>COVID-19 INFO</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./corona.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./news.html">News sources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sym">Corona Virus
+
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        
+
+        <div
+            style="position: relative;background-image: url('https://images.unsplash.com/photo-1585912812840-b457972f28d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'); background-repeat: no-repeat; background-size: cover; background-position: center center; max-width: 100%; height: 100%;">
+            <div class="text">
+                <h1 id="title">CHECK CORONA STATS</h1>
+
+                <div id="myBtn" class="links">
+                    <a id="stats" class="btn btn-primary btn-outline-white wow fadeInDown" data-wow-delay="0.4s"
+                        href="./stats.html">Graphical
+                        Stats</a>
+                    <a class="btn btn-primary btn-outline-white wow fadeInDown" data-wow-delay="0.4s"
+                        href="./maps.html"> Corona Tracking Map
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <div id="para">
+
+        <p>
+        <h3><img src="https://img.icons8.com/nolan/64/coronavirus.png" />Know how it spreads</h3><img id="virus"
+            src="https://cdn.pixabay.com/photo/2020/05/22/19/47/corona-5206882_960_720.png" alt="corona virus">
+        <ul>
+            <li>There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19).</li>
+            <li> The best way to prevent illness is to avoid being exposed to this virus.</li>
+            <li>The virus is thought to spread mainly from person-to-person.<br>
+                Between people who are in close contact with one another (within about 6 feet).<br>
+                Through respiratory droplets produced when an infected person coughs, sneezes or talks.<br>
+                These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into
+                the
+                lungs.</li>
+            <li>Some recent studies have suggested that COVID-19 may be spread by people who are not showing
+                symptoms.</li>
+        </ul>
+        </p>
+    </div>
+    <div id="sym" class="symp">
+
+        <h2>SYMPTOMS OF CORONAVIRUS</h2>
+    </div>
+    <div class="cards">
+        <div class="card1" style="width: 18rem;">
+            <img class="card-img-top" src="https://img.icons8.com/color/96/000000/breath.png" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">
+                <p><strong>Difficulty breathing</strong> – Around 1 out of every 6 people who gets COVID-19 becomes
+                    seriously ill and develops difficulty breathing or shortness of breath.</p>
+                </p>
+            </div>
+        </div>
+        <div class="card2" style="width: 18rem;">
+            <img class="card-img-top"
+                src="https://image.freepik.com/free-vector/man-coughs-having-cold_23-2148474191.jpg"
+                alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">
+                <p><strong>Continuous cough</strong> – this means coughing a lot for more than an hour, or 3 or more
+                    coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual).</p>
+                </p>
+            </div>
+        </div>
+        <div class="card3 mx-auto" style="width: 18rem;">
+            <img class="card-img-top" src="https://image.freepik.com/free-vector/person-with-fever_23-2148488888.jpg"
+                alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">
+                <p><strong>High Fever</strong> – this means you feel hot to touch on your chest or back (you do not
+                    need
+                    to
+                    measure your temperature). It is a common sign and also may appear in 2-10 days if you affected.
+                </p>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div id="advice">
+        <div class="prev">
+
+            <h2>PREVENTION & ADVICE</h2>
+        </div>
+        <div class="pcards">
+            <div class="pcard1" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.pixabay.com/photo/2020/03/30/11/00/mask-4983883_1280.png"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">
+                    <h5 class="title">Practice respiratory hygiene</h5>
+                    <p>Maintain good respiratory hygiene as covering your mouth &amp; nose with your bent elbow or
+                        tissue when cough or sneeze.</p>
+                </div>
+            </div>
+            <div class="pcard2" style="width: 18rem;">
+                <img class="card-img-top"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR8WcZfPvFwUY2_a5JuaYJbPsbuxBuVVHrtb2KDRcelgd7CsStQ&usqp=CAU"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">
+                    <p>
+                    <h5 class="title">Avoid touching face</h5>
+                    <p>Hands touch many surfaces and can pick up viruses. So, hands can transfer the virus to your eyes,
+                        nose or mouth and can make you sick.</p>
+                    </p>
+                </div>
+            </div>
+            <div class="pcard3 mx-auto" style="width: 18rem;">
+                <img class="card-img-top"
+                    src="https://cdn.pixabay.com/photo/2020/05/11/11/49/be-careful-5157742_1280.png"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">
+                    <h5 class="title">Maintain social distancing</h5>
+                    <p>Maintain at least 1 metre (3 feet) distance between yourself &amp; anyone who is coughing or
+                        sneezing. If you are too close, get chance to infected.</p>
+                    </p>
+                </div>
+            </div>
+            <div class="pcard4" style="width: 18rem;">
+                <img class="card-img-top"
+                    src="https://cdn.pixabay.com/photo/2013/04/01/10/55/wash-hands-98641_960_720.png"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">
+                    <h5 class="title">Wash your hands frequently</h5>
+                    <p>Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap
+                        and water for at least 20 seconds.</p>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="treat">
+        <div class="col-lg-7 col-xl-6">
+
+            <div class="text-block">
+
+                <h5 class="subtitle">Be carefull &amp; Stay Safe</h5>
+
+                <h2 class="title2">Treatment for coronavirus</h2>
+                <div class="treatpara">
+                    <p> <strong>To date, there is no vaccine and no specific antiviral medicine to prevent or treat
+                            COVID-2019. </strong> However, those affected should receive care to relieve symptoms.
+                        People
+                        with serious illness should be hospitalized. Most patients recover thanks to supportive care.
+                    </p>
+
+                    <p>Antibiotics do not help, as they do not work against viruses. Treatment aims to relieve the
+                        symptoms
+                        while your body fights the illness. You'll need to stay in isolation, away from other people,
+                        until
+                        you have recovered.</p>
+                </div>
+
+            </div><!-- .text-block -->
+
+        </div>
+
+    </div>
+    <div class="external">
+        <div id="treat2">
+            <div class="box5 bg-accent-dark">
+
+                <h6 class="title">Self Care</h6>
+
+                <p>If you have mild symptoms, stay at home until you’ve recovered. You can relieve your symptoms if you:
+                </p>
+
+                <ul class="list-arrow">
+
+                    <li>Rest and sleep</li>
+
+                    <li>Keep warm</li>
+
+                    <li>Drink plenty of liquids</li>
+
+                    <li>Use a room humidifier or take a hot shower to help ease a sore throat and cough</li>
+
+                </ul>
+
+                <h6 class="title">Medical Treatments</h6>
+
+                <p>If you develop a fever, cough, and have difficulty breathing, promptly seek medical care. Call in
+                    advance and tell your health provider of any recent travel or recent contact with travelers.</p>
+
+            </div>
+
+        </div>
+    </div>
+    <h2 id="follow">Follow steps to wash hands</h2>
+    <!--Grid column-->
+    <div id="circle1">
+
+
+        <img class="rounded-circle " alt="100x100" src="http://demo.themenio.com/kovid19/rtl/images/gfx/hand-f.png"
+            data-holder-rendered="true">
+
+    </div>
+    <!--Grid column-->
+    <!--Grid column-->
+    <div id="circle2">
+
+
+
+        <img class="rounded-circle " alt="100x100" src="http://demo.themenio.com/kovid19/rtl/images/gfx/hand-b.png"
+            data-holder-rendered="true">
+
+    </div>
+    <!--Grid column-->
+    <!--Grid column-->
+    <div id="circle3">
+
+
+        <img class="rounded-circle " alt="100x100" src="http://demo.themenio.com/kovid19/rtl/images/gfx/hand-d.png"
+            data-holder-rendered="true">
+
+    </div>
+    <!--Grid column-->
+    <!--Grid column-->
+    <div id="circle4">
+
+
+        <img class="rounded-circle " alt="100x100" src="http://demo.themenio.com/kovid19/rtl/images/gfx/hand-c.png"
+            data-holder-rendered="true">
+
+    </div>
+    <!--Grid column-->
+    <!--Grid column-->
+    <div id="circle5">
+
+
+        <img class="rounded-circle " alt="100x100" src="http://demo.themenio.com/kovid19/rtl/images/gfx/hand-e.png"
+            data-holder-rendered="true">
+
+    </div>
+    <!--Grid column-->
+    <!--Grid column-->
+    <div id="circle6">
+
+
+        <img class="rounded-circle z-depth-2" alt="100x100"
+            src="http://demo.themenio.com/kovid19/rtl/images/gfx/hand-a.png" data-holder-rendered="true">
+
+    </div>
+    <!--Grid column-->
+
+    <footer id="footer">
+        <h2>COVID-19 INFO</h2>
+        <p>This website is for health information and advice about coronavirus (COVID-19), how to prevent and protect
+            yourself from disease.<br>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a></p>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+    <script src="./js/corona.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

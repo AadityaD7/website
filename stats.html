@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,
+        body,
+        header,
+        .view {
+            height: 100%;
+        }
+
+        @media (min-width: 300px) {
+
+            a:not([href]):not([tabindex]) {
+                color: antiquewhite;
+                text-decoration: none;
+            }
+
+            a:not([href]):not([tabindex]):hover {
+                color: black;
+
+            }
+
+            .btn-primary:hover {
+                background-image: linear-gradient(to right, white, grey);
+                border-radius: 20px;
+                border: none;
+                color: black;
+            }
+
+            .text {
+                margin: 10px;
+                left: 26%;
+                right: 26%;
+                top: 70%;
+                color: white;
+            }
+
+            html,
+            body,
+            header,
+            .view {
+                height: 100vh;
+                background-color: black;
+            }
+
+            #myBtn {
+                position: absolute;
+                display: flex;
+                justify-content: space-evenly;
+                margin-right: 0;
+                left: 30%;
+                right: 30%;
+                top: 83%;
+            }
+
+
+            .btn-primary {
+                color: #fff;
+                background-color: transparent;
+                border: solid 2px white;
+                font-size: 1em;
+                margin: 20px;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                line-height: 18px;
+                padding-right: 20%;
+                padding-left: 20%;
+                border-radius: 27px;
+            }
+
+            h1 {
+                font-size: 197%;
+                color: antiquewhite;
+                position: absolute;
+                top: 76%;
+                left: 4%;
+                right: 1%;
+            }
+
+            .top-nav-collapse {
+                background-color: #78909c !important;
+            }
+
+            .navbar:not(.top-nav-collapse) {
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+        }
+
+        @media (min-width: 768px) {
+            a:not([href]):not([tabindex]) {
+                color: blanchedalmond;
+                text-decoration: none;
+                font-size: 2em;
+                line-height: 1em;
+            }
+
+            .col-md-12 {
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+                /* margin-top: 450px; */
+            }
+
+
+            #myBtn {
+                position: absolute;
+                display: flex;
+                justify-content: space-evenly;
+                margin-right: 0;
+                left: 30%;
+                right: 30%;
+                top: 83%;
+
+            }
+
+            #title {
+                position: absolute;
+                left: 5%;
+                right: 5%;
+                font-size: 5.em;
+                font-size: 4em;
+            }
+        }
+
+
+
+        @media (min-width: 992px) {
+            .navbar-expand-lg .navbar-collapse {
+                display: -ms-flexbox !important;
+                display: flex !important;
+                -ms-flex-preferred-size: auto;
+                flex-basis: auto;
+                margin-left: 600px;
+                padding: 10px;
+
+
+            }
+
+            #time {
+                color: #F03636;
+                position: absolute;
+                right: 5%;
+            }
+
+            .fa {
+                padding: 20px;
+                font-size: 30px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+            }
+
+            #footer {
+                background-color: red;
+                position: absolute;
+                left: 0%;
+                top: 212%;
+                width: 100%;
+                height: 202px;
+                background-color: black;
+            }
+
+            #footer h2 {
+                color: white;
+                font-family: 'Bebas Neue', cursive;
+                position: absolute;
+                left: 3%;
+            }
+
+            #footer p {
+
+                font-size: 1.5em;
+                padding-top: 5%;
+                position: absolute;
+                left: 5%;
+                right: 4%;
+                color: white;
+            }
+
+            #contain {
+                background-color: gray;
+                display: flex;
+                background-color: gray;
+                position: absolute;
+                top: 126%;
+                left: 0%;
+                right: 7%;
+                padding: -3%;
+                /* max-width: 92%; */
+                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1583324113626-70df0f4deaab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80);
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-size: 2em;
+                font-family: 'Anton', sans-serif;
+                width: 100%;
+                height: 700px;
+                color: white;
+            }
+
+            .countryName {
+                border: 2px solid #665c5c;
+                border-radius: 10px;
+                position: absolute;
+                /* display: block; */
+                top: 110%;
+                left: 17%;
+                right: 17%;
+                width: 21%;
+                color: white;
+                background-image: linear-gradient(45deg, black, gray);
+                font-size: 2em;
+                font-family: 'Bebas Neue', cursive;
+
+
+            }
+
+            .countryName:hover {
+                background-color: blanchedalmond;
+            }
+
+            .numbers {
+                color: #F03636;
+                margin-left: 37%;
+                white-space: nowrap;
+            }
+
+            #title {
+                color: blanchedalmond;
+                position: absolute;
+                top: 74%;
+                left: 28%;
+                right: 28%;
+                letter-spacing: 8px;
+                margin-bottom: 20px;
+                font-size: 2.6em;
+            }
+
+            .heading img {
+                vertical-align: middle;
+                border-style: none;
+                width: 66px;
+            }
+
+            #countryName {
+                background-color: black;
+            }
+
+            #first3 {
+                border-color: red;
+                margin: auto;
+            }
+
+            #second3 {
+                border-color: black;
+                margin: auto;
+            }
+
+            #update {
+                border-color: green;
+                margin: auto;
+            }
+
+            a:not([href]):not([tabindex]) {
+                color: wheat;
+                text-decoration: none;
+            }
+
+            a:not([href]):not([tabindex]):hover {
+                color: black;
+
+            }
+
+            option {
+                color: red;
+                text-align: center;
+            }
+
+            option:hover {
+                background-image: linear-gradient(gray, black);
+            }
+
+            #myBtn {
+                position: absolute;
+                display: flex;
+                justify-content: space-evenly;
+                margin-right: 89px;
+                left: 25%;
+                right: 25%;
+                top: 88%;
+            }
+
+
+
+            .btn-primary:hover {
+                background-image: linear-gradient(to right, white, grey);
+                border-radius: 20px;
+                border: none;
+                color: black;
+            }
+
+            #logo {
+                color: white;
+                white-space: nowrap;
+                font-size: 3em;
+                font-family: 'Bebas Neue', cursive;
+            }
+
+            #logo:hover {
+                color: gray;
+                text-decoration: none;
+            }
+
+            h1 {
+                letter-spacing: 8px;
+                margin-bottom: 20px;
+            }
+
+            h5 {
+                letter-spacing: 3px;
+            }
+
+            .hr-light {
+                border-top: 3px solid #fff;
+                width: 80px;
+            }
+
+            .navbar-dark .navbar-brand {
+                font-size: 3em;
+                font-family: 'Bebas Neue', cursive;
+                line-height: 2em;
+            }
+
+            img {
+                vertical-align: middle;
+                border-style: none;
+                width: 145px;
+            }
+
+            .navbar-dark .navbar-brand:hover {
+                color: gray;
+
+            }
+
+            .navbar-dark .navbar-nav .active>.nav-link {
+                color: white;
+            }
+
+            .navbar-dark .navbar-nav .nav-link {
+                color: rgba(255, 255, 255, .5);
+                margin-left: 20px;
+            }
+
+            #center {
+                color: white;
+            }
+
+            .navbar-dark .navbar-nav .nav-link:hover {
+                background-color: white;
+                color: black;
+                border-radius: 10px;
+                font-size: 1em;
+            }
+
+            .btn-primary {
+                color: black;
+                background-color: transparent;
+                border: solid 2px white;
+                font-size: 1em;
+                margin: -29px;
+                padding-top: 1%;
+                padding-bottom: 1%;
+                line-height: 18px;
+                padding-right: 1%;
+                padding-left: 1%;
+                border-radius: 27px;
+            }
+
+        }
+    </style>
+    <title>stats</title>
+
+</head>
+
+<body>
+
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#"><strong> <a id="logo" href="./corona.html">COVID-19 INFO</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./corona.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News sources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Corona Virus
+
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <div
+            style="position: relative;background-image: url('https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'); background-repeat: no-repeat; background-size: cover; background-position: center center; max-width: 100%; height: 100%;">
+        </div>
+    </header>
+    <div class="select-country">
+        <center id="center">
+            <select class="countryName" id="country_name" style="margin-bottom: 100px;"></select>*Select country for
+            stats. *Refresh page for loading stats.
+        </center>
+    </div>
+    <div id="contain">
+        <div id="first3">
+            <div class="box0">
+                <p class="heading"> <img src="https://img.icons8.com/fluent/96/000000/statistics.png" />
+                    Total Cases</p>
+                <p class="numbers" id="confirm">0</p>
+            </div>
+            <div class="box1">
+                <p class="heading"><img src="https://img.icons8.com/plasticine/100/000000/order-delivered.png" />
+                    Recovered Cases</p>
+                <p class="numbers" id="recover">0</p>
+            </div>
+            <div class="box2">
+                <p class="heading"><img src="https://img.icons8.com/emoji/96/000000/pensive-face.png" />
+                    Death Cases</p>
+                <p class="numbers" id="death">0</p>
+            </div>
+        </div>
+        <div id="second3">
+            <div class="box3">
+                <p class="heading"><img src="https://img.icons8.com/officel/80/000000/inspection.png" />
+                    New Confirmed Cases</p>
+                <p class="numbers" id="newConfirm">0</p>
+            </div>
+            <div class="box4">
+                <p class="heading"><img src="https://img.icons8.com/office/80/000000/heart-health.png" />
+                    New Recovered Cases</p>
+                <p class="numbers" id="newRecover">0</p>
+            </div>
+            <div class="box5">
+                <p class="heading"><img src="https://img.icons8.com/emoji/96/000000/pensive-face.png" />
+                    New Death Cases</p>
+                <p class="numbers" id="newDeath">0</p>
+            </div>
+        </div>
+        <div id="update">
+            <div class="box6">
+                <p class="heading"><img src="https://img.icons8.com/fluent/96/000000/time-machine.png" />
+                    Updated Time</p>
+                <p class="numbers" id="time">2020-05-26 12:20:42</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <h2>COVID-19 INFO</h2>
+        <p>This website is for health information and advice about coronavirus (COVID-19), how to prevent and protect
+            yourself from disease.<br>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a></p>
+
+    </footer>
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+    <script src="./js/corona.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
